@@ -1,0 +1,5 @@
+# Created when the app is installed (XAMPP / Codespaces) — never commit them
+storage/*.sqlite
+storage/installed.lock
+uploads/products/*
+!uploads/products/.gitkeep

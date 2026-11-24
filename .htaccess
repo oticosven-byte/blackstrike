@@ -1,0 +1,11 @@
+# BlackStrike — Apache settings (XAMPP)
+DirectoryIndex index.php
+Options -Indexes
+
+<FilesMatch "^(config\.php|.*\.sqlite|.*\.lock|README\.md)$">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>
